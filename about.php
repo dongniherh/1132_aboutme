@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>何東霓簡介</title>
+	<style type="text/css">
+		*{ font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+	</style>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Dong-Ni Herh";
+		}
+	</script>
+</head>
+<body>
+	<center><table width="70%">
+		<tr>
+			<td>
+				<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
+			</td>
+			<td>
+				<h1>何東霓</h1>
+				<font face= "Times New Roman"><h2 id="h2text">Dong-Ni Herh</font></h2><br>
+			</td>
+		</tr>
+	</table></center>
+
+	<center><table width="70%" border="1">
+		<tr>
+			<td>
+				個人網頁：<a href="https://www1.pu.edu.tw/~s1121427/"target="_blank">https://www1.pu.edu.tw/~s1121427/</a><br>
+				Portaly：<a href="https://portaly.cc/dongniherh/"target="_blank">https://portaly.cc/dongniherh/</a><br>
+				Tel：<a href="tel:+886-4-26328001">04-26328001</a><br>
+				E-mail：<a href="mailto:s1121427@pu.edu.tw">s1121427@pu.edu.tw</a><br>
+			</td>
+
+			<td><center>
+				大象席地而坐電影配樂<br>
+				<audio controls>
+					<source src="elephant.mp3" type="audio/mp3">
+				</audio><br>
+			</center></td>
+
+			<td><center>
+				不要去臺灣<br>
+				<iframe src="https://www.youtube.com/embed/pW88QFpHXa8"allowfullscreen></iframe>
+			</center></td>
+		</tr>
+	</table></center>
+	<center><table width="70%">
+		<tr>
+			<td>
+				<iframe height="430" width="350" src="https://bot.dialogflow.com/d0a3ec09-e266-43d2-b77f-effb951a5389"></iframe>
+			</td>
+		</tr>
+	</center></table>
+</font>
+<?php echo date("Y-m-d")?>
+</body>
+</html>
