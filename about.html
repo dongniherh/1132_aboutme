@@ -7,16 +7,27 @@
 	<style type="text/css">
 		*{ font-family:"標楷體"; margin-left:auto; margin-right:auto;}
 	</style>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Dong-Ni Herh";
+		}
+	</script>
 </head>
 <body>
 	<center><table width="70%">
 		<tr>
 			<td>
-				<img src="cliff.jpg" width="110%"></img>
+				<img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 			</td>
 			<td>
 				<h1>何東霓</h1>
-				<font face= "Times New Roman"><h2>Dong-Ni Herh</font></h2><br>
+				<font face= "Times New Roman"><h2 id="h2text">Dong-Ni Herh</font></h2><br>
 			</td>
 		</tr>
 	</table></center>
